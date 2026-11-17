@@ -199,8 +199,8 @@ int main(void)
   PID_Init(&PID_left, 0.01,0.65,0,100,-100,100);
   PID_Init(&PID_right,0.01,0.65,0,100,-100,100);
   PID_Init(&PID_speed, 0.01,0.65,0,100,-100,100);//速度环
-  PID_Init(&PID_angle,1.9,0,0,80,-80,15);//后续等待角度环测试后得到PID值
-  PID_Init(&PID_direct, 0, 0, 0,60,-60,40);//转向环
+  PID_Init(&PID_angle,1.9,0,0,100,-100,15);//后续等待角度环测试后得到PID值
+  PID_Init(&PID_direct, 0, 0, 0,100,-100,40);//转向环
 
   TIM1_Init();
 
